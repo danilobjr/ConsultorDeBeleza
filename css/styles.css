@@ -3559,6 +3559,23 @@ select
     background-color: white;
 }
 
+/* Box Produtos */
+
+#produtos .imagemContainer {
+    text-align: center;
+}
+
+#produtos .imagemContainer img {
+    width: 900px;
+}
+
+#produtos .texto {
+    font-family: calibri;
+    font-size: 20px;
+    line-height: 95%;
+    margin-left: 44px;
+}
+
 /* Box Rendimentos */
 
 .rendimentos {
@@ -3696,3 +3713,4 @@ ul.estilo li {
     height: 645px; 
     background: url('../images/bg/quemsomos-lideranca.jpg') no-repeat 25px 3px;
 }
+
