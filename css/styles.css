@@ -3714,3 +3714,51 @@ ul.estilo li {
     background: url('../images/bg/quemsomos-lideranca.jpg') no-repeat 25px 3px;
 }
 
+/* Pagina PRODUTOS */
+
+.display {
+    position: relative;
+    width: 585px;
+    height: 373px;
+    left: 50%;
+    margin: 50px 0 20px -320px;
+    box-shadow: 0 0 29px rgba(0,0,0,.3);
+}
+
+.display figure {
+    position: absolute;
+    margin: 0;
+    opacity: 0;
+    z-index: -1;
+    
+    -webkit-transition: opacity 300ms;
+}
+
+.display figure img {
+    float: left;
+}
+
+.display figure figcaption {
+    float: left;
+    width: 300px;
+    padding-top: 14px;
+}
+
+.display figure figcaption h2 {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.display figure figcaption h5 {
+    margin-top: 0;
+}
+
+.display figure figcaption p {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.display .active {
+    opacity: 1;
+    z-index: 10;
+}
