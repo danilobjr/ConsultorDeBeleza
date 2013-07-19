@@ -44,6 +44,7 @@ label.error {
 }
 
 .pagina {
+    position: relative;
     margin-top: 40px;
     padding-left: 45px;
 }
@@ -158,6 +159,27 @@ select
 label 
 {
 	cursor: pointer;
+}
+
+address {
+    font-style: normal;
+    font-size: 14px;
+}
+
+address a {
+    font-size: 14px;
+}
+
+address span {
+    font-weight: bold;
+}
+
+.animation {
+    transition: all 150ms;
+    -o-transition: all 150ms;
+    -webkit-transition: all 150ms;
+    -moz-transition: all 150ms;
+    -ms-transition: all 150ms;
 }
 
 .active
@@ -3778,7 +3800,7 @@ ul.estilo li {
     float: left;
     width: 317px;
     height: 347px;
-    padding-top: 14px;
+    margin-top: 14px;
     background-color: white;
     overflow-y: auto;
 }
@@ -3800,4 +3822,193 @@ ul.estilo li {
 .display .active {
     opacity: 1;
     z-index: 10;
+}
+
+/* Pagina CONTATO */
+
+#contato section {
+    position: relative;
+    height: 290px;
+}
+
+#contato figure {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    border: 3px solid #555;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.4);
+    z-index: 1;
+}
+
+#contato .dados > div {
+    position: absolute;
+}
+
+#contato .dados figure {
+    background-color: white;
+}
+
+#contato .dados figure img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -16px;
+}
+
+#contato .dados figure figcaption {
+    position: absolute;
+}
+
+#contato .fone {
+    top: -15px;
+    left: -40px;
+
+    transform: rotate(-27deg);
+    -o-transform: rotate(-27deg);
+    -ms-transform: rotate(-27deg);
+    -moz-transform: rotate(-27deg);
+    -webkit-transform: rotate(-27deg);
+}
+
+#contato .fone:hover {
+    top: -20px;
+    left: -30px;
+}
+
+#contato .fone:hover div {
+    left: 30px;
+    top: 5px;
+    cursor: default;
+}
+
+#contato .fone div, #contato .email div {
+    position: absolute;
+    padding: 5px 15px 5px 25px;
+    width: 131px;
+    color: white;
+    background: #555;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+
+#contato .fone div {
+    left: -150px;
+    top: 5px;
+}
+
+#contato .email {
+    left: -23px;
+    top: 22px;  
+
+    transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg); 
+}
+
+#contato .email div {
+    left: -120px;
+    top: 16px;
+}
+
+#contato .email:hover {
+    left: -13px;
+    top: 20px;
+}
+
+#contato .email:hover div {
+    left: 41px;
+    top: 16px;
+}
+
+#contato .email figure {
+    width: 55px;
+    height: 55px;
+}
+
+#contato .email a {
+    color: white;
+}   
+
+#contato section > figure {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid #6f1d8a;
+    box-shadow: 4px 4px 5px rgba(0,0,0,.4);
+    z-index: 10;
+}
+
+#contato section > figure img {
+    position: relative;
+    width: 200px;
+}
+
+#contato section > figure figcaption {
+    position: absolute;
+    width: 100%;
+    background-color: #6f1d8a;
+    bottom: -1px;
+    height: 35px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+#contato section > figure figcaption span {
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px #a42ccc;
+    font-weight: bold;
+}
+
+#contato address {
+    position: absolute;
+    float: left;
+    left: 220px;
+    top: 43px;
+}
+
+#contato address .contatos {
+    position: absolute;
+}
+
+#contato address .social {
+    position: absolute;
+    top: 67px;
+}
+
+#contato address .social .face {
+    position: absolute;
+    left: -73px;
+    top: 50px;
+    z-index: 2;
+}
+
+#contato address .social .face img {
+    width: 120px;
+}
+
+#contato address .social .gplus {
+    position: absolute;
+    top: 0;
+    left: -23px;
+}
+
+#contato address .social .gplus img {
+    width: 85px;
+}
+
+#contato address .social .twitter {
+    position: absolute;
+    top: 96px;
+    left: -122px;
+}
+
+#contato address .social .twitter img {
+    width: 65px;
 }

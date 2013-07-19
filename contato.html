@@ -13,13 +13,12 @@
     
 	<link rel="stylesheet" type="text/css" media="all" href="css/colors.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="css/styles.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="css/jcarousel.css" />
 	
 	<script src="js/jquery.js" type="text/javascript"></script>
 	<script src="js/jquery.autoheight.js" type="text/javascript"></script>
  
 	<script src="js/jcarousel.min.js" type="text/javascript"></script>
-	<script src="js/colorpicker.js" typ3 marcase="text/javascript"></script>
+	<script src="js/colorpicker.js" type="text/javascript"></script>
 	<script src="js/common.js" type="text/javascript"></script>
 	<script src="js/custom.js" type="text/javascript"></script>
 	<script src="js/jquery.validate.js" type="text/javascript"></script>
@@ -47,9 +46,14 @@
 				<div id="header_right">				
 					<div id="bottom">        
 
+						<!--
 						<div id="top">
-							<img src="images/logo_consultor_independente.png" alt='Consultor Independente Belcorp' />
+							<div id="search">
+								<div class="button-search"></div>									
+								<input type="text" name="chave" value="Procurar" onclick="this.value = '';" onkeydown="this.style.color = '#000000';" />
+							</div>
 						</div>
+						-->
 
 						<div class="links">
 							<a href="http://www.somosbelcorp.com.br/component/content/article?id=18&indicante=333573">
@@ -121,153 +125,65 @@
 			
 			<div id="notification"></div>
 			
-		</div> <!-- << container >> -->                		
+		</div> <!-- << container >> -->     
 
-		<div class="container slides">
-        	<div>
-        		<img src="images/slides/inicio.jpg" alt="sas" />
-        		<a href='http://www.somosbelcorp.com.br/component/content/article?id=18&indicante=333573' class='btnConsultor consultor'>
-        			SEJA UM CONSULTOR&nbsp;&nbsp;&nbsp;<span class='rightArrow'>&#9658;</span>
-        		</a>
-        	</div>
-            
-			<script type="text/javascript">
-				<!--
-				$(document).ready(function() 
-				{
-					$('#slideshow').nivoSlider();
-				});
-				-->
-			</script>
-		</div><!-- << container >> -->
+		<div class="breadcrumb">
+			<div class="container">
+				<h1>Contato</h1>
+			</div>								
+		</div>
 	</div><!-- << top container >> -->
 	
 	<!--<div id="content" class="clearfix">&nbsp;</div>-->
 	<div class="section" id="page_content">
-		<div class="container">
-			<div id='marcasDeSucesso' class="box">
-                <div class="box-heading">
-                    <h1 style="width: 550px;">3 Marcas de Sucesso para 3 Públicos Diferentes</h1>
-                </div>        
-			</div>
+		<div id='contato' class="container pagina">
+			<p class='destaque'>
+                Entre em contato e tire todas as suas dúvidas sobre como trablhar na Belcorp.
+            </p>
 
-			<div class='marcas'>
-				<a href="http://www.issuu.com/somosbelcorp/docs/lbel.brasil.julio.2013?e=0/3734682" alt="L'BEL" target='_blank' class='marca-imagem'><img src="images/site/marcas-lbel.png" alt="L'BEL" /></a>
-				<a href="http://www.issuu.com/somosbelcorp/docs/esika.brasil.julio.2013?e=0/3734718" alt="Ésika" target='_blank' class='marca-imagem'><img src="images/site/marcas-esika.png" alt="Ésika" /></a>
-				<a href="http://www.issuu.com/somosbelcorp/docs/cyzone.brasil.julio.2013?e=0/3722505" alt="CyZone" target='_blank' class='marca-imagem'><img src="images/site/marcas-cyzone.png" alt="CyZone" /></a>
-			</div>
+            <section>
+	            <figure>
+	            	<img src="images/eu-cortado.jpg" alt='Danilo Jr.' />
+	            	<figcaption><span>Danilo Jr.</span></figcaption>
+	            </figure>
 
-            <div id='marcasDeSucesso' class="box">
-                <div class="box-heading">
-                    <h1 style="width: 260px;">Mais de 500 Produtos</h1>
-                </div>        
-			</div>
+	            <address>
+	            	<div class='dados'>
+	            		<div class='fone animation'>
+		            		<figure>
+		            			<img src="images/social/fone.png" alt='Telefones' />
+		            		</figure>
+		            		<div class='animation'><span>Oi</span>: (85) 8809.3634<br/><span>TIM</span>: (85) 9731.9031</div>
+	        			</div>
 
-            <div id="produtos">
-                <p class='roxo texto'>
-                    São mais de 500 itens nas nossas 3 marcas,<br/>
-                    desde perfumes, maquiagens, cuidado com a pele<br/>
-                    até linha para bebês, masculina e acessórios.
-                </p>
-
-                <div class="imagemContainer">
-                    <img src="images/site/produtos.png" alt="produtos" />
-                </div>
-
-                <ul id="slideProdutos" class="jcarousel-skin-tango">
-                    <li><img src="images/produtos/lbel/homme.png" alt='Homme' /></li>
-                    <li><img src="images/produtos/lbel/devos.png" alt='Devos' /></li>
-                    <li><img src="images/produtos/lbel/1200_s.jpg" alt='1200°C' /></li>
-                    <li><img src="images/produtos/lbel/delyr-masculino.png" alt='Delyr Masculino' /></li>
-                    <li><img src="images/produtos/lbel/auteur.png" alt='Auteur' /></li>
-                    <li><img src="images/produtos/lbel/perfume-idolatre_s.jpg" alt='Idolâtré' /></li>
-                    <li><img src="images/produtos/lbel/satinrouge.png" alt='Satin Rouge' /></li>
-                    <li><img src="images/produtos/lbel/delyr-feminino.png" alt='Delyr Feminino' /></li>
-                    <li><img src="images/produtos/lbel/seduisant.png" alt='Séduisant' /></li>
-                    <li><img src="images/produtos/lbel/reve.png" alt='Rêve Sensuelle Passion' /></li>
-                    <li><img src="images/produtos/lbel/esmalte-vernis-tendance.png" alt='Vernis Tendance' /></li>
-                    <li><img src="images/produtos/lbel/batom-rouge-volumesse.png" alt='Rouge Volumesse' /></li>
-                    <li><img src="images/produtos/lbel/batom-infini.png" alt='Infini XP' /></li>
-                    <li><img src="images/produtos/lbel/maquiagem-cuarteto.png" alt='Expressive XP' /></li>
-                    <li><img src="images/produtos/lbel/maquiagem-chromatique.png" alt='Chromatique' /></li>
-                    <li><img src="images/produtos/lbel/maquiagem-couleur-luxe.png" alt='Couleur Luxe' /></li>
-                    <li><img src="images/produtos/lbel/effet-parfait.png" alt='Effet Parfait' /></li>
-                    <li><img src="images/produtos/lbel/effet-parfait-hidratante.png" alt='Effet Parfait Hidratante' /></li>
-                    <li><img src="images/produtos/lbel/effet-parfait-base-preenchimento.png" alt='Effet Parfait Base Preenchimento' /></li>
-                    <li><img src="images/produtos/lbel/supremacie_nuit.png" alt='Suprémacie NX Nuit' /></li>
-                    <li><img src="images/produtos/lbel/concentre-total.png" alt='Concetré Total' /></li>
-                    <li><img src="images/produtos/lbel/clarifique-dermo.png" alt='Clarifique Dermo Radiance' /></li>
-                </ul>
-            </div>
-
-			<div id='rendimentos' class="box" style='margin-bottom: 0;'>
-                <div class="box-heading">
-                    <h1 style="width: 220px;">Plano de Carreira</h1>
-                </div>        
-			</div>
-
-			<div class='rendimentos'>
-				<p class='formas'>3 formas de ganhar e se desenvolver na Belcorp.</p>
-
-				<img src="images/bg/lucroselevados.jpg" alt='Plano de Carreira Belcorp'>
-
-				<div class='bloco1'>
-					<div class='liderar'>
-						<p class='titulo roxo'>&#8226; GANHE POR LIDERAR</p>
-						<p class='descricao'>Lidere sua equipe e ganhe sobre as vendas de até 5 gerações.</p>
+	        			<div class='email animation'>
+		            		<figure>
+		            			<img src="images/social/email.png" alt='Email' />
+		            		</figure>
+		            		<div class='animation'><a href="mailto:danilobjr@gmail.com">danilobjr@gmail.com</a></div>
+	            		</div>
 					</div>
-					<div class='recrutar'>
-						<p class='titulo azul'>&#8226; GANHE POR RECRUTAR</p>
-						<p class='descricao'>Construa sua rede e ganhe sobre o 1º e 2º nível.</p>
-					</div>
-					<div class='vender'>
-						<p class='titulo cinza'>&#8226; GANHE POR VENDER</p>
-						<p class='descricao'>Até 60% de desconto em 3 marcas de sucesso<br />com 500 produtos para comprar e vender.</p>
-					</div>
-				</div>
-				<div class='bloco2'>
-					<p>
-						Acreditamos na sua capacidade e sabemos que você pode
-						<br/>
-						chegar até onde se propõe. Por isto, lhe oferecemos o
-						<br/>
-						<span class='roxo'>Plano de Carreira Belcorp</span>.
-					</p>
-				</div>
-			</div>
 
-			<div id='negocio' class="box" style='margin-bottom: 0;'>
-                <div class="box-heading">
-                    <h1 style="width: 270px;">Facilidade de Negócio</h1>
-                </div>        
-			</div>
+					<div class='skype' style='display:none'>
+	            		<figure>
+	            			<img src="images/social/skype.png" alt='Skype' />
+	            			<figcaption>danilojrr</figcaption>
+	            		</figure>
+	            	</div>
 
-			<div class='negocio'>
-				<div class='texto'>
-					<p class='roxo'>Ferramentas que auxiliam o início do seu<br />negócio e o crescimento de sua rede.</p>
+	            	<div class='social'>
+		            	<a class='face' href="http://facebook.com/danilo.juniorr"><img src="images/social/facebook.png" alt='facebook' /></a>
+		            	<a class='gplus' href="http://gplus.to/danilojrr"><img src="images/social/googleplus.png" alt='google+' /></a>
+		            	<a class='twitter' href="http://twitter.com/danilojrr"><img src="images/social/twitter.png" alt='twitter' /></a>
+	            	</div>
+	            </address>
+            </section>
 
-					<ul class='estilo'>
-						<li>Cadastro GRATUITO</li>
-						<li>1 ciclo por mês</li>
-						<li>3 marcas para 3 públicos diferentes em um único pedido mínimo</li>
-						<li>500 produtos ao seu dispor e ao alcance de todos.</li>
-						<li>3 formas de pagamento: 28 dias de crédito,<br/>boleto e cartão de crédito.</li>
-						<li>Multipedidos: não há data certa para fazer pedido,<br/>você pode solicitá-lo quando desejar.</li>
-						<li>Sistema de pontos.</li>
-						<li>Capacitação.</li>
-						<li>Pedido mínimo: entre R$ 195,00 e R$ 230,00 (dependendo<br /> dos produtos escolhidos).</li>
-						<li>Kit de iniciação: descontos, amostras, brindes<br />e ferramentas de vendas para garantir seu<br />sucesso desde o inicio na Belcorp.</li>
-					</ul>
+            <br clear='all' />
 
-					<br clear='all' />
-
-					<a href='http://www.somosbelcorp.com.br/component/content/article?id=18&indicante=333573' class='btnConsultor consultor'>
-						SEJA UM CONSULTOR&nbsp;&nbsp;&nbsp;<span class='rightArrow'>&#9658;</span>
-					</a>
-				</div>
-
-				<img src="images/bg/facilidadedenegocio.jpg" alt='Facilidade de Negócio' />
-			</div>
+			<a href='http://www.somosbelcorp.com.br/component/content/article?id=18&indicante=333573' class='btnConsultor'>
+    			SEJA UM CONSULTOR&nbsp;&nbsp;&nbsp;<span class='rightArrow'>&#9658;</span>
+    		</a>
 		</div><!-- << container >> -->
 	</div><!-- << page content >> -->
 <script type="text/javascript">
