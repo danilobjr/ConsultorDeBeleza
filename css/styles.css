@@ -3740,8 +3740,10 @@ ul.estilo li {
 
 .display figure figcaption {
     float: left;
-    width: 300px;
+    width: 317px;
+    height: 347px;
     padding-top: 14px;
+    overflow-y: auto;
 }
 
 .display figure figcaption h2 {
