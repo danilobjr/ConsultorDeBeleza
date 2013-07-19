@@ -3725,14 +3725,14 @@ ul.estilo li {
     z-index: 1;
 }
 
-.pseudo-display {
+.shadow-display {
     position: absolute;
     width: 585px;
     height: 373px;
     background-color: white;
 }
 
-.pseudo-display:before {
+.shadow-display:before {
     content: " ";
     width: 500px;
     height: 200px;
@@ -3745,7 +3745,7 @@ ul.estilo li {
     z-index: -1;
 }
 
-.pseudo-display:after {
+.shadow-display:after {
     content: " ";
     width: 500px;
     height: 200px;

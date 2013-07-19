@@ -15,7 +15,7 @@ $(function () {
         var produto = $(e.currentTarget);
         var idProduto = produto.data().idProduto;
 
-        var display = $('.pseudo-display');
+        var display = $('.shadow-display');
         var figuras = display.children().removeClass('active');
 
         var figuraEscolhida = figuras.filter('[data-id-produto=' + idProduto + ']');
