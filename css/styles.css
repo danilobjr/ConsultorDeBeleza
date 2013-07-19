@@ -3722,12 +3722,39 @@ ul.estilo li {
     height: 373px;
     left: 50%;
     margin: 50px 0 20px -320px;
-    box-shadow: 0 0 29px rgba(0,0,0,.3);
+    
+}
+
+.display:before {
+    content: " ";
+    width: 500px;
+    height: 200px;
+    box-shadow: 0 0 40px rgba(0,0,0,.5);
+    position: absolute;
+    border-radius: 300px/25px;
+    left: 50%;
+    top: 5px;
+    margin-left: -250px;
+}
+
+.display:after {
+    content: " ";
+    width: 500px;
+    height: 200px;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    position: absolute;
+    border-radius: 300px/25px;
+    left: 50%;
+    top: 173px;
+    margin-left: -250px;
 }
 
 .display figure {
     position: absolute;
+    width: 585px;
+    height: 373px;
     margin: 0;
+    background-color: white;
     opacity: 0;
     z-index: -1;
     
@@ -3743,6 +3770,7 @@ ul.estilo li {
     width: 317px;
     height: 347px;
     padding-top: 14px;
+    background-color: white;
     overflow-y: auto;
 }
 
