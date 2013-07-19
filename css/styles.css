@@ -3722,10 +3722,17 @@ ul.estilo li {
     height: 373px;
     left: 50%;
     margin: 50px 0 20px -320px;
-    
+    z-index: 1;
 }
 
-.display:before {
+.pseudo-display {
+    position: absolute;
+    width: 585px;
+    height: 373px;
+    background-color: white;
+}
+
+.pseudo-display:before {
     content: " ";
     width: 500px;
     height: 200px;
@@ -3735,9 +3742,10 @@ ul.estilo li {
     left: 50%;
     top: 5px;
     margin-left: -250px;
+    z-index: -1;
 }
 
-.display:after {
+.pseudo-display:after {
     content: " ";
     width: 500px;
     height: 200px;
@@ -3747,6 +3755,7 @@ ul.estilo li {
     left: 50%;
     top: 173px;
     margin-left: -250px;
+    z-index: -1;
 }
 
 .display figure {
