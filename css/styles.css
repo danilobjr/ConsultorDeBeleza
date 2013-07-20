@@ -3828,7 +3828,17 @@ ul.estilo li {
 
 #contato section {
     position: relative;
+    width: 300px;
     height: 290px;
+    top: 10px;
+
+    transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+
+    z-index: 50;
 }
 
 #contato figure {
@@ -3847,15 +3857,13 @@ ul.estilo li {
     position: absolute;
 }
 
-#contato .dados figure {
-    background-color: white;
+#contato .dados .item div {
+    z-index: 2;
 }
 
-#contato .dados figure img {
+#contato .dados img {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -16px;
+    z-index: 3;
 }
 
 #contato .dados figure figcaption {
@@ -3863,8 +3871,8 @@ ul.estilo li {
 }
 
 #contato .fone {
-    top: -15px;
-    left: -40px;
+    top: 0;
+    left: -50px;
 
     transform: rotate(-27deg);
     -o-transform: rotate(-27deg);
@@ -3874,32 +3882,39 @@ ul.estilo li {
 }
 
 #contato .fone:hover {
-    top: -20px;
-    left: -30px;
+    top: -7px;
+    left: -37px;
+}
+
+#contato .fone div {
+    width: 168px !important;
+    left: -150px;
+    top: 3px;
+    font-size: 14px !important;
 }
 
 #contato .fone:hover div {
     left: 30px;
-    top: 5px;
+    top: 3px;
     cursor: default;
 }
 
-#contato .fone div, #contato .email div {
+#contato .dados div div {
     position: absolute;
     padding: 5px 15px 5px 25px;
     width: 131px;
     color: white;
+    font-size: 16px;
     background: #555;
     box-shadow: 2px 2px 4px rgba(0,0,0,.5);
 }
 
-#contato .fone div {
-    left: -150px;
-    top: 5px;
+#contato .dados div div a {
+    font-size: 16px;
 }
 
 #contato .email {
-    left: -23px;
+    left: -30px;
     top: 22px;  
 
     transform: rotate(-8deg);
@@ -3914,8 +3929,12 @@ ul.estilo li {
     top: 16px;
 }
 
+#contato .email div {
+    width: 150px !important;
+}
+
 #contato .email:hover {
-    left: -13px;
+    left: -22px;
     top: 20px;
 }
 
@@ -3977,38 +3996,108 @@ ul.estilo li {
     position: absolute;
 }
 
+/* SOCIAL */
+
 #contato address .social {
     position: absolute;
     top: 67px;
 }
 
-#contato address .social .face {
+#contato address .skype {
     position: absolute;
-    left: -73px;
-    top: 50px;
-    z-index: 2;
+    top: 60px;
+    left: -33px;
 }
 
-#contato address .social .face img {
-    width: 120px;
+#contato address .skype div {
+    top: 27px;
+    left: -10px;
+    width: 58px;
+    font-size: 16px;
 }
 
-#contato address .social .gplus {
+#contato address .skype:hover div {
+    left: 70px;
+}
+
+#contato address .face {
     position: absolute;
-    top: 0;
-    left: -23px;
+    left: -105px;
+    top: 110px;
+    z-index: 5;
+
+    transform: rotate(28deg);
+    -o-transform: rotate(28deg);
+    -ms-transform: rotate(28deg);
+    -moz-transform: rotate(28deg);
+    -webkit-transform: rotate(28deg); 
 }
 
-#contato address .social .gplus img {
-    width: 85px;
+#contato address .face div {
+    top: 46px;
+    left: 14px;
+    width: 75px;
+    font-size: 16px;
 }
 
-#contato address .social .twitter {
+#contato address .face:hover div {
+    left: 110px;
+}
+
+#contato address .gplus {
     position: absolute;
-    top: 96px;
-    left: -122px;
+    top: 108px;
+    left: -44px;
+    z-index: 4;
+
+    transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg); 
 }
 
-#contato address .social .twitter img {
-    width: 65px;
+#contato address .gplus div {
+    top: 29px;
+    left: -5px;
+    width: 58px;
+    font-size: 16px;
+}
+
+#contato address .gplus:hover div {
+    left: 70px;
+}
+
+#contato address .twitter {
+    position: absolute;
+    top: 130px;
+    left: -160px;
+
+    transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); 
+
+    z-index: 6;
+}
+
+#contato address .twitter div {
+    top: 29px;
+    left: 7px;
+    width: 42px;
+    font-size: 16px;
+}
+
+#contato address .twitter:hover div {
+    left: 70px;
+}
+
+#contato #container-consultor {
+    position: absolute;
+    top: 65px;
+    right: 0;
+}
+
+#contato #btnSejaConsultor {    
 }
